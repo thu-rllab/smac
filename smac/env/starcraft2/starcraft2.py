@@ -375,7 +375,7 @@ class StarCraft2Env(MultiAgentEnv):
                 np.flip(
                     np.transpose(
                         np.array(
-                            list(map_info.pathing_grid.data), dtype=np.bool
+                            list(map_info.pathing_grid.data), dtype=bool
                         ).reshape(self.map_x, self.map_y)
                     ),
                     axis=1,
